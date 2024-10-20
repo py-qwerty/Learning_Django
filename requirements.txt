@@ -1,0 +1,5 @@
+Django==4.1.5
+gunicorn==20.1.0
+psycopg2==2.9.3  # If you're using PostgreSQL
+mysqlclient==2.1.1  # If you're using MySQL
+#djangorestframework==3.14.0  # If you're using Django REST Framework
