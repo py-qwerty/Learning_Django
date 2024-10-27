@@ -25,9 +25,7 @@ SECRET_KEY = 'django-insecure-x4hp2vo33)&azqc9@y^&-2hk!7uio##5=ry8jqcn8@f(p31b)0
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 DEBUG = False
-ALLOWED_HOSTS = [
-    'qr-madrid.es'
-    ]
+ALLOWED_HOSTS = ['qr-madrid.es']
 
 
 # Application definition
@@ -126,3 +124,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+SECURE_HSTS_SECONDS = 31536000  # Enables HTTP Strict Transport Security (HSTS)
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_SSL_REDIRECT = True  # Redirects HTTP to HTTPS
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
